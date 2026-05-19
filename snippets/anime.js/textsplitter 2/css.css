@@ -1,0 +1,11 @@
+.docs-demo.is-active #text-splittext-textsplitter-settings-accessible .docs-demo-template {
+  opacity: 0;
+}
+
+#text-splittext-textsplitter-settings-accessible .large.row {
+  perspective: 600px;
+}
+
+#text-splittext-textsplitter-settings-accessible .text-xl {
+  transform-style: preserve-3d;
+}
