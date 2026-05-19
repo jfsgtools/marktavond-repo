@@ -1,0 +1,6 @@
+PATH.*
+settings*.*
+*.env
+env.*
+.vscode/*
+.git/*
