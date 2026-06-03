@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import AppLogo from '@/components/ui/AppLogo';
-import Icon from '@/components/ui/AppIcon';
+import AppLogo from '../components/ui/AppLogo';
+import Icon from '../components/ui/AppIcon';
 
 interface HeaderProps {
   isVisible?: boolean;

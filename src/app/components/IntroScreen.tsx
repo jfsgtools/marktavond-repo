@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface IntroScreenProps {
   onComplete: () => void;
+  isVisible?: boolean;
 }
 
-export default function IntroScreen({ onComplete }: IntroScreenProps) {
+export default function IntroScreen({ onComplete, isVisible = true }: IntroScreenProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const lettersRef = useRef<HTMLSpanElement[]>([]);
   const hintRef = useRef<HTMLParagraphElement>(null);
@@ -71,10 +72,12 @@ export default function IntroScreen({ onComplete }: IntroScreenProps) {
     }, 500);
   };
 
+  const show = isVisible;
+
   return (
     <div
       ref={containerRef}
-      className="intro-screen"
+      className={`intro-screen ${ show ? 'opacity-100 translate-y-0' : 'bg-transparent'}`}
       onClick={handleClick}
       role="button"
       tabIndex={0}

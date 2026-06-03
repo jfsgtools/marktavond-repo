@@ -1,6 +1,6 @@
 import React from 'react';
-import AppImage from '@/components/ui/AppImage';
-import Icon from '@/components/ui/AppIcon';
+import AppImage from '../../../components/ui/AppImage';
+import Icon from '../../../components/ui/AppIcon';
 
 export interface Burger {
   id: number;

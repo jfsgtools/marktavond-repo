@@ -2,8 +2,8 @@
 
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import AppImage from '@/components/ui/AppImage';
-import Icon from '@/components/ui/AppIcon';
+import AppImage from '../../components/ui/AppImage';
+import Icon from '../../components/ui/AppIcon';
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -99,7 +99,7 @@ export default function HeroSection() {
           <div className="burger-card bg-primary p-6 flex flex-col justify-between min-h-[150px]">
             <Icon name="FireIcon" size={28} className="text-white/60" variant="solid" />
             <div>
-              <div className="stat-number text-white">120+</div>
+              <div className="stat-number" style={{ color: 'white'}} >120+</div>
               <p className="text-white/70 text-sm font-semibold mt-1">Burgers per dag</p>
             </div>
           </div>

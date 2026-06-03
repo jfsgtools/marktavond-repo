@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import BurgerCard, { Burger } from './components/BurgerCard';
-import Icon from '@/components/ui/AppIcon';
+import Icon from '../../components/ui/AppIcon';
 
 const burgers: Burger[] = [
 {

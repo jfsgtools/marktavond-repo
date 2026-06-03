@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import Icon from '@/components/ui/AppIcon';
-import AppLogo from '@/components/ui/AppLogo';
+import Icon from '../../../components/ui/AppIcon';
+import AppLogo from '../../../components/ui/AppLogo';
 
 interface LoginFormProps {
-  onLogin: () => void;
+  onLogin: (user: string) => void;
 }
 
 export default function LoginForm({ onLogin }: LoginFormProps) {
@@ -22,9 +22,23 @@ export default function LoginForm({ onLogin }: LoginFormProps) {
 
     // Mock authentication — static credentials
     setTimeout(() => {
-      if (gebruikersnaam === 'admin' && wachtwoord === 'bam2026') {
-        onLogin();
-      } else {
+      // Florian
+      if (gebruikersnaam === '190827' && wachtwoord === 'BamBurgers@2026!') {
+        onLogin('Florian Harbers');
+      } 
+      // Guus
+      else if (gebruikersnaam === '190755' && wachtwoord === 'Bam@2026?'){
+        onLogin('Guus Beekman')
+      }
+      // Jochem
+      else if (gebruikersnaam === '190982' && wachtwoord === 'Burger@26') {
+        onLogin('Jochem Boer')
+      } 
+      // Cornelis
+      else if (gebruikersnaam === '190724' && wachtwoord === 'BamBurger26!') {
+        onLogin('Cornelis van As')
+      }
+      else {
         setFout('Onjuiste gebruikersnaam of wachtwoord.');
         setLaden(false);
       }

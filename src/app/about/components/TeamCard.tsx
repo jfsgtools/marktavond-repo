@@ -1,5 +1,5 @@
 import React from 'react';
-import AppImage from '@/components/ui/AppImage';
+import AppImage from '../../../components/ui/AppImage';
 
 interface TeamLid {
   naam: string;

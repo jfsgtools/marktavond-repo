@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import AppLogo from '@/components/ui/AppLogo';
-import Icon from '@/components/ui/AppIcon';
+import AppLogo from '../../../components/ui/AppLogo';
+import Icon from '../../../components/ui/AppIcon';
 import Link from 'next/link';
 
 interface DashboardProps {
+  user: string;
   onLogout: () => void;
 }
 
@@ -35,7 +36,7 @@ const statusKleur: Record<string, string> = {
   Wacht: 'bg-gray-100 text-gray-600',
 };
 
-export default function Dashboard({ onLogout }: DashboardProps) {
+export default function Dashboard({ user, onLogout }: DashboardProps) {
   const [actiefPagina, setActiefPagina] = useState<Pagina>('overzicht');
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -137,7 +138,7 @@ export default function Dashboard({ onLogout }: DashboardProps) {
           <div className="flex items-center gap-3">
             <span className="hidden sm:flex items-center gap-2 text-sm text-muted-foreground font-medium">
               <span className="w-2 h-2 bg-green-500 rounded-full" />
-              Daan Vermeer
+              {user}
             </span>
           </div>
         </header>
