@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import AppImage from '../../components/ui/AppImage';
 
 interface IntroScreenProps {
   onComplete: () => void;
@@ -92,22 +93,7 @@ export default function IntroScreen({ onComplete, isVisible = true }: IntroScree
       <div className="intro-logo-container relative z-10">
         {/* Logo mark */}
         <div ref={logoRef} className="intro-logo-mark flex items-center justify-center">
-          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="120" height="120" aria-hidden="true">
-            <rect width="120" height="120" rx="28" fill="#E8300A" />
-            {/* Burger illustration */}
-            {/* Bottom bun */}
-            <path d="M24 78 Q60 90 96 78 L96 86 Q60 96 24 86 Z" fill="#FFFFFF" opacity="0.9" />
-            {/* Patty */}
-            <rect x="20" y="62" width="80" height="14" rx="7" fill="#F5A623" />
-            {/* Lettuce wave */}
-            <path d="M18 58 Q30 52 42 58 Q54 64 66 58 Q78 52 90 58 Q96 61 102 58 L102 62 Q96 65 90 62 Q78 56 66 62 Q54 68 42 62 Q30 56 18 62 Z" fill="#FFFFFF" opacity="0.7" />
-            {/* Top bun */}
-            <path d="M24 42 Q60 28 96 42 L96 56 Q60 60 24 56 Z" fill="#FFFFFF" opacity="0.9" />
-            {/* Sesam seeds */}
-            <ellipse cx="45" cy="37" rx="4" ry="2.5" fill="#F5A623" transform="rotate(-15 45 37)" />
-            <ellipse cx="60" cy="33" rx="4" ry="2.5" fill="#F5A623" transform="rotate(5 60 33)" />
-            <ellipse cx="75" cy="37" rx="4" ry="2.5" fill="#F5A623" transform="rotate(15 75 37)" />
-          </svg>
+          <AppImage alt='Raket met erop een hamburger en onder de uitlaat sausspetters' src='/assets/images/app_logo.png' />
         </div>
 
         {/* Brand text with individual letters */}
@@ -116,7 +102,7 @@ export default function IntroScreen({ onComplete, isVisible = true }: IntroScree
             <span
               key={i}
               ref={(el) => { if (el) lettersRef.current[i] = el; }}
-              className={`intro-letter ${char === 'B' ? (i === 0 ? 'letter-b1' : 'letter-b2') : ''}`}
+              className={`intro-letter p${i < 3 ? '1' : '2'} `}
               aria-hidden="true"
             >
               {char}

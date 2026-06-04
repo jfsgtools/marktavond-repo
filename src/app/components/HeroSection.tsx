@@ -40,21 +40,20 @@ export default function HeroSection() {
         <div className="reveal-up opacity-100 mb-6">
           <span className="section-label inline-flex items-center gap-2">
             <span className="w-6 h-px bg-primary inline-block" />
-            Schoolmarkt Editie 2026
+            Marktavond 2026
           </span>
         </div>
 
         {/* Main headline */}
         <h1 className="reveal-up opacity-100 text-hero-xl font-black text-foreground mb-8" style={{ maxWidth: '14ch' }}>
-          De Lekkerste<br />
-          <span className="text-primary">Burger</span><br />
-          op School.
+          Ontploffend <br />
+          <span className="text-primary ml-8">lekker.</span><br />
         </h1>
 
         {/* Sub + CTA */}
         <div className="reveal-up opacity-100 flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-16">
           <p className="text-muted-foreground text-lg max-w-sm leading-relaxed">
-            Zelfgemaakte burgers, eerlijke prijzen — elke schooldag vers bereid door jouw klasgenoten.
+            Zelfgemaakte burgers, eerlijke prijzen — <span className="text-accent font-black">14 juni</span> vers op de marktavond.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
             <Link href="/menu" className="btn-primary">
@@ -117,8 +116,8 @@ export default function HeroSection() {
           <div className="burger-card sm:col-span-3 bg-muted p-6 flex items-center justify-between gap-4 overflow-hidden relative">
             <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-accent/10 to-transparent" aria-hidden />
             <div>
-              <p className="section-label mb-1">Elke dag vers</p>
-              <p className="font-black text-xl text-foreground">Geen conserveermiddelen. Geen compromissen.</p>
+              <p className="section-label mb-1">Biologisch* vers</p>
+              <p className="font-black text-xl text-foreground">Geen conserveermiddelen. Vers van de boerderij.</p>
             </div>
             <Link href="/menu" className="btn-primary flex-shrink-0 text-sm">
               Bekijk Alles
