@@ -83,7 +83,7 @@ export default function AboutPage() {
               Door <span className="text-primary">Scholieren.</span>
             </h1>
             <p className=" text-muted-foreground text-lg max-w-xl leading-relaxed">
-              BamBurgers begon als een project voor economie — en groeide uit tot een van de populairste kraam op de marktavond.
+              BamBurgers begon als een project voor economie — en groeide uit tot de beste kraam op de marktavond.
             </p>
           </div>
         </section>
@@ -117,7 +117,7 @@ export default function AboutPage() {
                 In november 2025 kregen vier leerlingen van klas 3vt bij economie de opdracht: bouw een bedrijf voor de marktavond. Wij kozen voor niet zomaar burgers, maar voor <span className='font-black'><span className="text-primary">Bam</span>Burgers</span>.
               </p>
               <p className='text-muted-foreground leading relaxed'>
-                Het doel van deze marktavond is geld ophalen voor <span className='font-black text-primary'>[DOEL HIER INVOEGEN]</span>. En natuurlijk een goed cijfer halen!
+                Het doel van deze marktavond is geld ophalen voor <Link href="/doelen" className='font-black text-primary underline'>Stichting Jafet</Link>. En natuurlijk een goed cijfer halen!
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Drie weken lang testten we recepten. Onze families moesten de marteling ondergaan. Maar toen ze voor de achtste keer terugkwam voor hun zoveelste burger, wisten we: <span className="text-primary font-black">perfect</span>.

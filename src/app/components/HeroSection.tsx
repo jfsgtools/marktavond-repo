@@ -53,7 +53,7 @@ export default function HeroSection() {
         {/* Sub + CTA */}
         <div className="reveal-up opacity-100 flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-16">
           <p className="text-muted-foreground text-lg max-w-sm leading-relaxed">
-            Zelfgemaakte burgers, eerlijke prijzen — <span className="text-accent font-black">14 juni</span> vers op de marktavond.
+            Zelfgemaakte burgers, eerlijke prijzen — <span className="text-accent font-black">19 juni</span> vers op de marktavond.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
             <Link href="/menu" className="btn-primary">
@@ -116,8 +116,8 @@ export default function HeroSection() {
           <div className="burger-card sm:col-span-3 bg-muted p-6 flex items-center justify-between gap-4 overflow-hidden relative">
             <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-accent/10 to-transparent" aria-hidden />
             <div>
-              <p className="section-label mb-1">Biologisch* vers</p>
-              <p className="font-black text-xl text-foreground">Geen conserveermiddelen. Vers van de boerderij.</p>
+              <p className="section-label mb-1">Vers uit de boederij. Geen e-nummers.</p>
+              <p className="font-black text-xl text-foreground">Verser dan vers.</p>
             </div>
             <Link href="/menu" className="btn-primary flex-shrink-0 text-sm">
               Bekijk Alles

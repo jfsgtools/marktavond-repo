@@ -98,18 +98,18 @@ export default function MenuPage() {
           <div className="absolute top-0 right-0 w-96 h-96 blob-primary rounded-full" aria-hidden />
           <div className="grain-overlay absolute inset-0" aria-hidden />
           <div className="max-w-6xl mx-auto relative z-10">
-            <div className="reveal-up opacity-100 mb-4">
+            <div className="opacity-100 mb-4">
               <span className="section-label inline-flex items-center gap-2">
                 <span className="w-6 h-px bg-primary inline-block" />
                 Onze Menukaart
               </span>
             </div>
-            <h1 className="reveal-up opacity-100 text-display font-black text-foreground mb-4">
+            <h1 className="opacity-100 text-display font-black text-foreground mb-4">
               Kies Jouw<br />
-              <span className="text-primary">Bam.</span>
+              <span className="text-primary">Burger</span>
             </h1>
-            <p className="reveal-up opacity-100 text-muted-foreground text-lg max-w-lg leading-relaxed">
-              Vijf handgemaakte burgers, elke dag vers. Geen nummers, geen bullshit — gewoon goede burgers voor een eerlijke prijs.
+            <p className="opacity-100 text-muted-foreground text-lg max-w-lg leading-relaxed">
+              Handgemaakte burgers. Verse ingredienten, geen rotzooi — gewoon de beste burgers voor de beste prijs.
             </p>
           </div>
         </section>
@@ -158,21 +158,21 @@ export default function MenuPage() {
               <Icon name="ClockIcon" size={24} className="text-accent" />
               <div>
                 <p className="font-black text-white text-sm">Openingstijden</p>
-                <p className="text-white/60 text-sm">Maandag t/m vrijdag · 12:00 – 13:30</p>
+                <p className="text-white/60 text-sm">Vrijdag 19 Juni · 15:00 - 19:00</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Icon name="MapPinIcon" size={24} className="text-accent" />
               <div>
                 <p className="font-black text-white text-sm">Locatie</p>
-                <p className="text-white/60 text-sm">Schoolkantine · Hal B</p>
+                <p className="text-white/60 text-sm">Nog niet bekend</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Icon name="BanknotesIcon" size={24} className="text-accent" />
               <div>
                 <p className="font-black text-white text-sm">Betalen</p>
-                <p className="text-white/60 text-sm">Pin of contant</p>
+                <p className="text-white/60 text-sm">Tikkie/iDeal of contant</p>
               </div>
             </div>
           </div>

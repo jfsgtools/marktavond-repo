@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: 'BamBurgers — Ontploffend lekker',
-  description: 'BamBurgers is het schoolmarkt burgerproject van scholieren. Bekijk ons menu met zelfgemaakte burgers en leer ons verhaal kennen.',
+  description: 'BamBurgers is een marktavond project van scholieren. Bekijk ons menu met zelfgemaakte burgers en leer ons verhaal kennen.',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },

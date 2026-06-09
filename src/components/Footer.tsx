@@ -21,13 +21,16 @@ export default function Footer() {
           <Link href="/about" className="text-sm font-600 text-muted-foreground hover:text-foreground transition-colors">
             Over Ons
           </Link>
+          <Link href="/doelen" className='text-sm font-600 text-muted-foreground hover:text-foreground transition-colors'>
+            Onze Doelen
+          </Link>
           <Link href="/admin-panel" className="text-sm font-600 text-muted-foreground hover:text-foreground transition-colors">
             Admin
           </Link>
         </nav>
 
         <p className="text-xs text-muted-foreground text-center sm:text-right">
-          Schoolmarkt project · Gemaakt met ❤️
+          Project Marktavond 2026
         </p>
       </div>
     </footer>

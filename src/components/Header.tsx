@@ -58,6 +58,9 @@ export default function Header({ isVisible = false, forceShow = false }: HeaderP
             <Link href="/about" className="nav-link-dutch text-muted-foreground hover:text-foreground transition-colors">
               Over Ons
             </Link>
+            <Link href="/doelen" className="nav-link-dutch text-muted-foreground hover:text-foreground transition-colors">
+              Onze Doelen
+            </Link>
             <Link href="/menu" className="btn-primary text-sm">
               Bekijk Menu
             </Link>
@@ -95,6 +98,13 @@ export default function Header({ isVisible = false, forceShow = false }: HeaderP
             onClick={() => setMobileOpen(false)}
           >
             Over Ons
+          </Link>
+          <Link
+            href="/doelen"
+            className="nav-link-dutch text-2xl text-foreground hover:text-primary transition-colors"
+            onClick={() => setMobileOpen(false)}
+          >
+            Onze Doelen
           </Link>
           <Link
             href="/menu"
