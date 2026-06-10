@@ -74,9 +74,6 @@ export default function DoelenPage() {
                 </div>
 
                 <div className="reveal-up opacity-100 flex flex-col gap-6 lg:pl-6">
-                <h2 className="text-section font-black text-foreground">
-                    Hoe het<br />allemaal begon
-                </h2>
                 <p className="text-muted-foreground leading-relaxed">
                     <span className="font-bold text-primary">Stichting Jafet</span> ondersteunt het werk van <span className='font-bold text-secondary'>Janneke en Fernando Galvâo - Hulst</span> en zamelt geld in om dit werk voort te zetten en uit te breiden.                </p>
                 <p className='text-muted-foreground leading relaxed'>
