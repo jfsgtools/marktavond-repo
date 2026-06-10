@@ -24,6 +24,9 @@ export default function Footer() {
           <Link href="/doelen" className='text-sm font-600 text-muted-foreground hover:text-foreground transition-colors'>
             Onze Doelen
           </Link>
+          <Link href="/review" className='text-sm font-600 text-muted-foreground hover:text-foreground transition-colors'>
+            Gastenboek
+          </Link>          
           <Link href="/admin-panel" className="text-sm font-600 text-muted-foreground hover:text-foreground transition-colors">
             Admin
           </Link>
