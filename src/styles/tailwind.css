@@ -144,6 +144,10 @@
   .section-label {
     @apply text-xs font-black uppercase tracking-widest text-muted-foreground;
   }
+
+  .review {
+    @apply bg-card rounded-2xl overflow-hidden border border-border bento-card-hover p-5 max-w-lg;
+  }
 }
 
 /* Intro Screen */

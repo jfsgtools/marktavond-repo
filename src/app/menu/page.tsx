@@ -9,10 +9,10 @@ import Icon from '../../components/ui/AppIcon';
 const burgers: Burger[] = [
 {
   id: 1,
-  naam: 'De Classic Bam',
-  beschrijving: 'Onze handgemaakte rundvleespatty met dubbele cheddar, verse sla, tomaat en onze geheime Bam-saus op een geroosterd sesambroodje.',
-  ingredienten: ['Rundvlees', 'Cheddar', 'Sla', 'Tomaat', 'Bam-saus', 'Sesambroodje'],
-  prijs: 4.5,
+  naam: 'De BamBurger',
+  beschrijving: 'Onze verse rundvleesburger met verse sla, tomaat en saus op een geroosterde witte bol.',
+  ingredienten: ['Rundvlees', 'Sla', 'Tomaat', 'Saus', 'Witte Bol'],
+  prijs: 2.5,
   label: 'Bestseller',
   labelKleur: 'bg-primary',
   afbeelding: "https://images.unsplash.com/photo-1708989173581-df1a5b95bd81",
@@ -21,51 +21,15 @@ const burgers: Burger[] = [
 },
 {
   id: 2,
-  naam: 'De Cheese Bam',
-  beschrijving: 'Drievoudige kaaslaag — cheddar, gouda en brie — gesmolten over een sappige patty met rode ui en mosterd-mayonaise.',
-  ingredienten: ['Rundvlees', 'Cheddar', 'Gouda', 'Brie', 'Rode ui', 'Mosterd-mayo'],
-  prijs: 5.0,
-  label: 'Nieuw',
-  labelKleur: 'bg-secondary',
-  afbeelding: "https://images.unsplash.com/photo-1619901282828-7cbde1c89884",
-  altTekst: 'Burger overdekt met gesmolten kaas op een licht broodje, close-up, warm geel licht',
-  populair: false
-},
-{
-  id: 3,
-  naam: 'De Spicy Bam',
-  beschrijving: 'Voor de durvers. Jalapeños, sriracha-mayo, gerookte paprika en een knapperige onion ring on top. Niet voor bange mensen.',
-  ingredienten: ['Rundvlees', 'Jalapeños', 'Sriracha-mayo', 'Onion ring', 'Paprika'],
-  prijs: 5.0,
-  label: '🔥 Heet',
-  labelKleur: 'bg-orange-600',
-  afbeelding: "https://img.rocket.new/generatedImages/rocket_gen_img_177e0ada2-1772288634169.png",
-  altTekst: 'Pittige burger met jalapeños en rode saus, donkere achtergrond, dramatisch licht',
-  populair: false
-},
-{
-  id: 4,
-  naam: 'De Veggie Bam',
-  beschrijving: 'Volledig plantaardig. Krokante kikkererwtenpatty met avocado, zongedroogde tomaat, rucola en citroen-tahini saus.',
-  ingredienten: ['Kikkererwten', 'Avocado', 'Rucola', 'Zongedroogde tomaat', 'Tahini'],
-  prijs: 4.5,
-  label: '🌱 Veggie',
-  labelKleur: 'bg-green-600',
-  afbeelding: "https://images.unsplash.com/photo-1543339462-88f4850abc5b",
-  altTekst: 'Vegetarische burger met avocado en groene bladeren, helder daglicht, witte achtergrond',
-  populair: false
-},
-{
-  id: 5,
-  naam: 'De Double Bam',
-  beschrijving: 'Twee patties, dubbele kaas, dubbele smaak. Met bacon, caramelui, barbecuesaus en augurk. De echte schoollunch upgrade.',
-  ingredienten: ['2x Rundvlees', 'Bacon', 'Caramelui', 'BBQ-saus', 'Augurk', 'Cheddar'],
-  prijs: 6.0,
+  naam: 'De BoemBurger',
+  beschrijving: 'Dubbel zo groot, dubbel zo lekker. Dezelfde ingrediënten, maar alleen voor de échte durvers!',
+  ingredienten: ['2x Rundvlees', 'Tomaat', 'Sla', 'Saus', 'Witte Bol',],
+  prijs: 4.0,
   label: 'Extra Groot',
   labelKleur: 'bg-foreground',
   afbeelding: "https://images.unsplash.com/photo-1654682095423-997f19f047c9",
   altTekst: 'Dubbele burger met bacon en kaas gestapeld hoog, dramatische studio belichting',
-  populair: true
+  populair: false
 }];
 
 
@@ -116,37 +80,20 @@ export default function MenuPage() {
 
         {/* Burger grid */}
         {/* BENTO AUDIT:
-             Array has 5 cards: [ClassicBam(groot), CheeseBam, SpicyBam, VeggieBam, DoubleBam(groot)]
-             Row 1: [col-1..2: ClassicBam cs-2] [col-3: CheeseBam cs-1]
-             Row 2: [col-1..2: ClassicBam rs continues] [col-3: SpicyBam cs-1]
-             Row 3: [col-1: VeggieBam cs-1] [col-2..3: DoubleBam cs-2]
-             Placed 5/5 cards ✓
+             Array has 2 cards: [ClassicBam(klein), DoubleBam(groot)]
+             Row 1: [col-1..2: ClassicBam cs-2] [col-2..3: DoubleBam cs-2]
+             Placed 2/2 cards ✓
           */}
         <section ref={sectionRef} className="pb-20 px-6">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* ClassicBam — groot, col-span-2 */}
-            <div className="reveal-up opacity-100 lg:col-span-2">
-              <BurgerCard burger={burgers[0]} groot />
-            </div>
-
-            {/* CheeseBam */}
-            <div className="reveal-up opacity-100">
-              <BurgerCard burger={burgers[1]} />
-            </div>
-
-            {/* SpicyBam */}
-            <div className="reveal-up opacity-100">
-              <BurgerCard burger={burgers[2]} />
-            </div>
-
-            {/* VeggieBam */}
-            <div className="reveal-up opacity-100">
-              <BurgerCard burger={burgers[3]} />
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
+            {/* ClassicBam — klein, col-span-2 */}
+            <div className="reveal-up opacity-100 sm:col-span-2 lg:col-span-2">
+              <BurgerCard burger={burgers[0]} />
             </div>
 
             {/* DoubleBam — groot, col-span-2 */}
             <div className="reveal-up opacity-100 sm:col-span-2 lg:col-span-1">
-              <BurgerCard burger={burgers[4]} />
+              <BurgerCard burger={burgers[1]} />
             </div>
           </div>
         </section>
@@ -158,7 +105,7 @@ export default function MenuPage() {
               <Icon name="ClockIcon" size={24} className="text-accent" />
               <div>
                 <p className="font-black text-white text-sm">Openingstijden</p>
-                <p className="text-white/60 text-sm">Vrijdag 19 Juni · 15:00 - 19:00</p>
+                <p className="text-white/60 text-sm">Vrijdag 19 Juni · 17:30 - 19:30</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -172,7 +119,7 @@ export default function MenuPage() {
               <Icon name="BanknotesIcon" size={24} className="text-accent" />
               <div>
                 <p className="font-black text-white text-sm">Betalen</p>
-                <p className="text-white/60 text-sm">Tikkie/iDeal of contant</p>
+                <p className="text-white/60 text-sm">Online of contant</p>
               </div>
             </div>
           </div>

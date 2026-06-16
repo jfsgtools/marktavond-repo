@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import AppImage from '../../components/ui/AppImage';
 import Icon from '../../components/ui/AppIcon';
+import Review from '../../components/ui/Review';
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -88,40 +89,42 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" aria-hidden />
             <div className="absolute bottom-0 left-0 p-6 text-white">
               <span className="text-xs font-black uppercase tracking-widest text-accent mb-2 block">Bestseller</span>
-              <h2 className="text-2xl font-black leading-tight mb-1">De Classic Bam</h2>
-              <p className="text-white/80 text-sm mb-3">Dubbele kaas, huissaus, verse groenten</p>
-              <span className="price-tag text-accent">€ 4,50</span>
+              <h2 className="text-2xl font-black leading-tight mb-1">De BamBurger</h2>
+              <p className="text-white/80 text-sm mb-3">Sla, Tomaat, Bamsaus</p>
+              <span className="price-tag text-accent">€ 2,50</span>
             </div>
           </div>
 
           {/* Stat card 1 */}
           <div className="burger-card bg-primary p-6 flex flex-col justify-between min-h-[150px]">
-            <Icon name="FireIcon" size={28} className="text-white/60" variant="solid" />
             <div>
-              <div className="stat-number" style={{ color: 'white'}} >120+</div>
-              <p className="text-white/70 text-sm font-semibold mt-1">Burgers per dag</p>
+              <p className="text-white/70 text-sm font-semibold mt-1">Klanten geven ons:</p>
+              <div className="stat-number" style={{ color: 'white'}} ><Review max={5} rating={5} color='text-white' width='45px' height='auto' className='py-3 origin-center' showRemaining /></div>
             </div>
           </div>
 
-          {/* Stat card 2 */}
+          {/* Review card */}
           <div className="burger-card bg-foreground p-6 flex flex-col justify-between min-h-[150px]">
-            <Icon name="StarIcon" size={28} className="text-accent/60" variant="solid" />
             <div>
-              <div className="stat-number text-accent">5</div>
-              <p className="text-muted text-sm font-semibold mt-1" style={{ color: 'rgba(250,250,248,0.6)' }}>Unieke burgers</p>
+              <p className="text-lg lg:text-xl text-accent leading-tight mt-1 mb-3 font-bold" >Laat uw mening horen en geef ook een review:</p>
+              <Link href="/review" className='btn-primary font-medium flex-shrink-0 text-lg lg:text-xl px-5'>
+                <Icon name="UserIcon" variant='solid' size={21} className='' />
+                Gastenboek
+              </Link>
             </div>
           </div>
 
           {/* Fresh label card — full width */}
           <div className="burger-card sm:col-span-3 bg-muted p-6 flex items-center justify-between gap-4 overflow-hidden relative">
-            <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-accent/10 to-transparent" aria-hidden />
+            {/* WAT DOET DIT HIER?????? (zie beneden)
+            <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-accent/10 to-transparent" aria-hidden /> */}
             <div>
-              <p className="section-label mb-1">Vers uit de boederij. Geen e-nummers.</p>
+              <p className="section-label mb-1">Vers van de slager.</p>
               <p className="font-black text-xl text-foreground">Verser dan vers.</p>
             </div>
-            <Link href="/menu" className="btn-primary flex-shrink-0 text-sm">
+            <Link href="/menu" className="btn-primary flex-shrink-0 text-sm " >
               Bekijk Alles
-              <Icon name="ArrowRightIcon" size={16} />
+              <Icon name="ArrowRightIcon" variant='solid' size={16} className='' />
             </Link>
           </div>
         </div>

@@ -11,24 +11,26 @@ import Link from 'next/link';
 
 const teamleden: TeamLid[] = [
 {
-  naam: 'Cornelis van As',
+  naam: 'Jochem Boer',
   rol: 'Bedrijfsleider',
   afbeelding: "https://sig.monotype.com/render/105/font/282bce5dfeebf528c0f1642576e7b69f?rt=?&rs=48&w=35&fg=000000&bg=FFFFFF&t=o&sc=2&userLang=en&render_mode=new",
+  // afbeelding: "/assets/team/jochem.jpg",
   altTekst: '',
   emoji: '🧑‍💼'
 },
 {
-  naam: 'Jochem Boer',
-  rol: 'Accountant',
+  naam: 'Cornelis van As',
+  rol: 'Administrateur',
   afbeelding: "https://sig.monotype.com/render/105/font/282bce5dfeebf528c0f1642576e7b69f?rt=?&rs=48&w=35&fg=000000&bg=FFFFFF&t=o&sc=2&userLang=en&render_mode=new",
+  // afbeelding: "/assets/team/cornelis.jpg",
   altTekst: '',
   emoji: '💰'
 },
 {
   naam: 'Guus Beekman',
-  rol: 'Reclame',
-  afbeelding: "https://sig.monotype.com/render/105/font/282bce5dfeebf528c0f1642576e7b69f?rt=?&rs=48&w=35&fg=000000&bg=FFFFFF&t=o&sc=2&userLang=en&render_mode=new",
-  altTekst: '',
+  rol: 'Reclameontwerker',
+  afbeelding: "/assets/team/guus.jpg",
+  altTekst: 'Jongen met kort, blond haar, blauwe ogen en een beige zipper aan op een witte achtergrond',
   emoji: '🎨'
 },
 {
@@ -83,7 +85,7 @@ export default function AboutPage() {
               Door <span className="text-primary">Scholieren.</span>
             </h1>
             <p className=" text-muted-foreground text-lg max-w-xl leading-relaxed">
-              BamBurgers begon als een project voor economie — en groeide uit tot de beste kraam op de marktavond.
+              BamBurgers begon als een project voor economie — en groeide uit tot de beste hamburgerkraam op de marktavond.
             </p>
           </div>
         </section>
@@ -103,9 +105,9 @@ export default function AboutPage() {
               {/* Floating quote card */}
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-5 rounded-2xl max-w-xs shadow-xl hidden sm:block">
                 <p className="text-sm font-bold leading-snug italic">
-                  "We wilden iets echts bouwen — niet alleen een cijfer en geld (op)halen."
+                  "We wilden iets echts creëren — niet alleen een cijfer en geld (op)halen."
                 </p>
-                <p className="text-white/70 text-xs mt-2 font-semibold">— Cornelis, oprichter</p>
+                <p className="text-white/70 text-xs mt-2 font-semibold">— Jochem, oprichter</p>
               </div>
             </div>
 
@@ -117,7 +119,7 @@ export default function AboutPage() {
                 In november 2025 kregen vier leerlingen van klas 3vt bij economie de opdracht: bouw een bedrijf voor de marktavond. Wij kozen voor niet zomaar burgers, maar voor <span className='font-black'><span className="text-primary">Bam</span>Burgers</span>.
               </p>
               <p className='text-muted-foreground leading relaxed'>
-                Het doel van deze marktavond is geld ophalen voor <Link href="/doelen" className='font-black text-primary underline'>Stichting Jafet</Link>. En natuurlijk een goed cijfer halen!
+                Het doel van deze marktavond is geld ophalen voor <Link href="/doelen" className='font-black text-primary underline'>Stichting Jafet</Link>. En natuurlijk willen wij ook een hoog cijfer halen!
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Drie weken lang testten we recepten. Onze families moesten de marteling ondergaan. Maar toen ze voor de achtste keer terugkwam voor hun zoveelste burger, wisten we: <span className="text-primary font-black">perfect</span>.
@@ -137,7 +139,7 @@ export default function AboutPage() {
               BamBurgers in Cijfers
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/10">
-              <StatBlock getal={5} label="Unieke burgers" />
+              <StatBlock getal={1} label="Unieke burger" />
               <StatBlock getal={98} suffix="%" label="Tevreden klanten" />
               <StatBlock getal={4} label="Teamleden" />
               <StatBlock getal={1} label="Goed doel" />
@@ -168,7 +170,7 @@ export default function AboutPage() {
 
               {/* Values card */}
               <div className="reveal-up opacity-100 bg-primary rounded-2xl p-8 flex flex-col gap-6 text-white">
-                <span className="section-label text-white/60">Onze Waarden</span>
+                <span className="section-label text-white/60">Hier Staan Wij Voor:</span>
                 <ul className="flex flex-col gap-4 flex-1">
                   {['Kwaliteit', 'Transparante prijzen', 'Geen verspilling', 'Goede doelen'].map((waarde) =>
                   <li key={waarde} className="flex items-center gap-3 text-sm font-semibold">
@@ -191,7 +193,7 @@ export default function AboutPage() {
                 De mensen achter de burger
               </h2>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-8">
               {teamleden.map((lid) =>
               <div key={lid.naam} className="reveal-up opacity-100">
                   <TeamCard lid={lid} />

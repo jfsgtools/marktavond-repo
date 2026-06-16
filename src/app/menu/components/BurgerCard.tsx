@@ -44,7 +44,7 @@ export default function BurgerCard({ burger, groot = false }: BurgerCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-5 flex flex-col flex-1">
+      <div className="p-5 sm:p-3 lg:p-5 flex flex-col flex-1">
         <div className="flex items-start justify-between gap-3 mb-2">
           <h2 className="font-black text-xl text-foreground leading-tight">{burger.naam}</h2>
           <span className="price-tag text-primary flex-shrink-0">
@@ -56,7 +56,7 @@ export default function BurgerCard({ burger, groot = false }: BurgerCardProps) {
 
         <div className="flex flex-wrap gap-1.5 mt-auto">
           {burger.ingredienten.map((ing) => (
-            <span key={ing} className="px-2 py-0.5 bg-muted text-muted-foreground text-xs rounded-full font-medium">
+            <span key={ing} className="px-1 sm:px-2 py-0.5 bg-muted text-muted-foreground text-xs rounded-full font-medium">
               {ing}
             </span>
           ))}
@@ -67,6 +67,9 @@ export default function BurgerCard({ burger, groot = false }: BurgerCardProps) {
             <Icon name="FireIcon" size={14} variant="solid" className="text-primary" />
             Meest besteld vandaag
           </div>
+        )}
+        {!burger.populair && (
+          <div className='my-4 hidden sm:visible sm:flex lg:my-1 items-center gap-1.5' />
         )}
       </div>
     </article>
