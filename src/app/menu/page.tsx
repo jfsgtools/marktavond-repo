@@ -95,8 +95,8 @@ export default function MenuPage() {
             {/* DoubleBam — groot, col-span-2 */}
             {/* <div className="reveal-up opacity-100 sm:col-span-2 lg:col-span-1">
               <BurgerCard burger={burgers[1]} />
-            </div>
-          </div> */}
+            </div> */}
+          </div>
         </section>
 
         {/* Info strip */}
