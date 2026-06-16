@@ -8,6 +8,16 @@ import Icon from '../../components/ui/AppIcon';
 import Link from 'next/link';
 import LogoText from '../../components/ui/LogoText';
 import Review from '../../components/ui/Review';
+import ViewGuestReview, { GuestReview } from './components/GuestReview';
+
+// const GuestReviews: GuestReview[] = [
+//   {
+//     naam: 'Anoniem Onbekend',
+//     plaats: 'Ontspanje',
+//     review: 5,
+//     tekst: 'Wonderschone, bijzondere tekst die ontzettend lang is. Zo lang dat lang lang is, is lang lang allang geweest. Voor een ontiegelijk lange zin is dit lang.'
+//   }
+// ];
 
 export default function DoelenPage() {
       const revealRef = useRef<HTMLDivElement>(null);
@@ -57,22 +67,14 @@ export default function DoelenPage() {
             <section data-reveal-section className="px-7 md:px-12 py-12 relative overflow-hidden">
               {/* Reviews */}
 
-              {/* HOLDER */}
+              {/* TEMP */}
               <div className='reveal-up opacity-100 py-20 flex flex-col justify-center'>
                 <h2 className='font-black text-gray-400/35 text-center text-3xl'>Er zijn nog geen reviews geplaatst</h2>
               </div>
 
-              {/* TEMP */}
-              {/* <div className='reveal-up opacity-100 py-8 md:py-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 justify-center'>
-                <div className='review opacity-100 reveal-up'>
-                  <div className='flex justify-between pb-2'>
-                    <p className='font-black text-primary text-xl'>
-                      Lorem Ipsum
-                    </p>
-                    <Review rating={5} max={5} color='text-accent' width='30' height='auto' className='justify-0' showRemaining={false} />
-                  </div>
-                  <p className=''>een langere tekst die wat langer is dan andere teksten. een mooi kenmerk van deze lange tekst is dat deze tekst lang is! Dit is het einde van de lange tekst.</p>
-                </div>
+              {/* HOLDER */}
+              {/* <div className='reveal-up opacity-100 py-8 md:py-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-center'>
+                <ViewGuestReview review={GuestReviews[0]} />
               </div> */}
             </section>
             
