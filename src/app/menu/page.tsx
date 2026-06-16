@@ -19,18 +19,19 @@ const burgers: Burger[] = [
   altTekst: 'Klassieke burger met kaas en sla op een sesambroodje, warm zijlicht, donkere achtergrond',
   populair: true
 },
-{
-  id: 2,
-  naam: 'De BoemBurger',
-  beschrijving: 'Dubbel zo groot, dubbel zo lekker. Dezelfde ingrediënten, maar alleen voor de échte durvers!',
-  ingredienten: ['2x Rundvlees', 'Tomaat', 'Sla', 'Saus', 'Witte Bol',],
-  prijs: 4.0,
-  label: 'Extra Groot',
-  labelKleur: 'bg-foreground',
-  afbeelding: "https://images.unsplash.com/photo-1654682095423-997f19f047c9",
-  altTekst: 'Dubbele burger met bacon en kaas gestapeld hoog, dramatische studio belichting',
-  populair: false
-}];
+// {
+//   id: 2,
+//   naam: 'De BoemBurger',
+//   beschrijving: 'Dubbel zo groot, dubbel zo lekker. Dezelfde ingrediënten, maar alleen voor de échte durvers!',
+//   ingredienten: ['2x Rundvlees', 'Tomaat', 'Sla', 'Saus', 'Witte Bol',],
+//   prijs: 4.0,
+//   label: 'Extra Groot',
+//   labelKleur: 'bg-foreground',
+//   afbeelding: "https://images.unsplash.com/photo-1654682095423-997f19f047c9",
+//   altTekst: 'Dubbele burger met bacon en kaas gestapeld hoog, dramatische studio belichting',
+//   populair: false
+// }
+];
 
 
 export default function MenuPage() {
@@ -92,10 +93,10 @@ export default function MenuPage() {
             </div>
 
             {/* DoubleBam — groot, col-span-2 */}
-            <div className="reveal-up opacity-100 sm:col-span-2 lg:col-span-1">
+            {/* <div className="reveal-up opacity-100 sm:col-span-2 lg:col-span-1">
               <BurgerCard burger={burgers[1]} />
             </div>
-          </div>
+          </div> */}
         </section>
 
         {/* Info strip */}
