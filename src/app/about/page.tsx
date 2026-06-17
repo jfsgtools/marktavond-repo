@@ -208,7 +208,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 px-6">
+        <section className="py-20 px-6" data-reveal-section>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-section font-black text-foreground mb-4">
               Klaar voor een <span className="text-primary">knallende</span> ervaring?
@@ -229,7 +229,7 @@ export default function AboutPage() {
           </div>
 
           {/* CONTACT */}
-          <div id='contact' className='max-w-4xl mx-auto border-border border-2 rounded-lg mt-28 mb-12 px-4 py-6 grid grid-flow-row gap-2'>
+          <div id='contact' className='reveal-up max-w-4xl mx-auto border-border border-2 rounded-lg mt-28 mb-12 px-4 py-6 grid grid-flow-row gap-2'>
             <h2 className='font-black text-primary text-section text-center'>Contact</h2>
             
             <div id='location' className='contact-item'>
