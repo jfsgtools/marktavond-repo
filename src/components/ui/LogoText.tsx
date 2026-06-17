@@ -2,15 +2,16 @@
 
 import React from 'react';
 
-interface LogoText {
+interface LogoTextProps {
      bold: boolean;
-     [key: string]: any;
 }
 
-function LogoText({
-     bold
-}: LogoText) {<>
-     <span className={bold ? 'font-bold' : ''}><span className='text-primary'>Bam</span><span className='text-secondary'>Burgers</span></span>
-</>};
+function BamBurgers({
+     bold = false
+}: LogoTextProps) {
+     return (
+          <span className={bold ? 'font-bold' : ''}><span className='text-primary'>Bam</span><span className='text-secondary'>Burgers</span></span>
+     );
+}
 
-export default LogoText
+export default BamBurgers

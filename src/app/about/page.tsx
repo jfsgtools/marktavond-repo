@@ -8,21 +8,20 @@ import StatBlock from './components/StatBlock';
 import AppImage from '../../components/ui/AppImage';
 import Icon from '../../components/ui/AppIcon';
 import Link from 'next/link';
+import BamBurgers from '../../components/ui/LogoText';
 
 const teamleden: TeamLid[] = [
 {
   naam: 'Jochem Boer',
   rol: 'Bedrijfsleider',
-  afbeelding: "https://sig.monotype.com/render/105/font/282bce5dfeebf528c0f1642576e7b69f?rt=?&rs=48&w=35&fg=000000&bg=FFFFFF&t=o&sc=2&userLang=en&render_mode=new",
-  // afbeelding: "/assets/team/jochem.jpg",
+  afbeelding: "/assets/team/jochem.jpg",
   altTekst: '',
   emoji: '🧑‍💼'
 },
 {
   naam: 'Cornelis van As',
   rol: 'Administrateur',
-  afbeelding: "https://sig.monotype.com/render/105/font/282bce5dfeebf528c0f1642576e7b69f?rt=?&rs=48&w=35&fg=000000&bg=FFFFFF&t=o&sc=2&userLang=en&render_mode=new",
-  // afbeelding: "/assets/team/cornelis.jpg",
+  afbeelding: "/assets/team/cornelis.jpg",
   altTekst: '',
   emoji: '💰'
 },
@@ -107,7 +106,7 @@ export default function AboutPage() {
                 <p className="text-sm font-bold leading-snug italic">
                   "We wilden iets echts creëren — niet alleen een cijfer en geld (op)halen."
                 </p>
-                <p className="text-white/70 text-xs mt-2 font-semibold">— Jochem, oprichter</p>
+                <p className="text-white/70 text-xs mt-2 font-semibold">— Jochem, bedrijfsleider</p>
               </div>
             </div>
 
@@ -116,7 +115,7 @@ export default function AboutPage() {
                 Hoe het<br />allemaal begon
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                In november 2025 kregen vier leerlingen van klas 3vt bij economie de opdracht: bouw een bedrijf voor de marktavond. Wij kozen voor niet zomaar burgers, maar voor <span className='font-black'><span className="text-primary">Bam</span>Burgers</span>.
+                In november 2025 kregen vier leerlingen van klas 3vt bij economie de opdracht: bouw een bedrijf voor de marktavond. Wij kozen voor niet zomaar burgers, maar voor <BamBurgers bold={true} />.
               </p>
               <p className='text-muted-foreground leading relaxed'>
                 Het doel van deze marktavond is geld ophalen voor <Link href="/doelen" className='font-black text-primary underline'>Stichting Jafet</Link>. En natuurlijk willen wij ook een hoog cijfer halen!

@@ -89,6 +89,13 @@ export default function Header({ isVisible = false, forceShow = false }: HeaderP
         </div>
         <nav className="flex flex-col items-center gap-6" aria-label="Mobiele navigatie">
           <Link
+            href="/"
+            className="nav-link-dutch text-2xl text-foreground hover:text-primary transition-colors"
+            onClick={() => setMobileOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
             href="/menu"
             className="nav-link-dutch text-2xl text-foreground hover:text-primary transition-colors"
             onClick={() => setMobileOpen(false)}

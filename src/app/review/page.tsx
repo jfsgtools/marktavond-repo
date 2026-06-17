@@ -9,6 +9,7 @@ import Link from 'next/link';
 import LogoText from '../../components/ui/LogoText';
 import Review from '../../components/ui/Review';
 import ViewGuestReview, { GuestReview } from './components/GuestReview';
+import BamBurgers from '../../components/ui/LogoText';
 
 // const GuestReviews: GuestReview[] = [
 //   {
@@ -57,7 +58,7 @@ export default function DoelenPage() {
                     </div>
                     <h1 className=" text-display font-black text-foreground mb-6" style={{ maxWidth: '16ch' }}>
                     Mensen<br />
-                    Over <span className="text-primary">Bam</span><span className='text-secondary'>Burgers</span>
+                    Over <BamBurgers bold={false} />
                     </h1>
                     <p className=" text-muted-foreground text-lg max-w-xl leading-relaxed">
                         Lees hier onze reviews en schrijf ook zelf in ons gastenboek
@@ -87,7 +88,7 @@ export default function DoelenPage() {
                   <Link href="mailto:bamburgersbv@gmail.com?subject=BamBurgers%20Review" className='underline font-semibold text-accent'>bamburgersbv@gmail.com</Link>
                   <> </>en schrijf uw voor- en achternaam, plaats en cijfer van 1 tot 5 op.
                    <br /> Eventueel kan u hier ook een stukje tekst bij zetten, die wij dan laten zien.
-                   <br /> Groetjes van Team <span className='font-bold'><span className='text-primary'>Bam</span><span className='text-secondary'>Burgers</span></span>!
+                   <br /> Groetjes van Team <BamBurgers bold={true} />!
                 </p>
               </div>
             </section>            

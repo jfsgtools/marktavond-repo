@@ -6,6 +6,7 @@ import Footer from '../../components/Footer';
 import AppImage from '../../components/ui/AppImage';
 import Icon from '../../components/ui/AppIcon';
 import Link from 'next/link';
+import BamBurgers from '../../components/ui/LogoText';
 
 export default function DoelenPage() {
       const revealRef = useRef<HTMLDivElement>(null);
@@ -77,10 +78,10 @@ export default function DoelenPage() {
                 <p className="text-muted-foreground leading-relaxed">
                     <span className="font-bold text-primary">Stichting Jafet</span> ondersteunt het werk van <span className='font-bold text-secondary'>Janneke en Fernando Galvâo - Hulst</span> en zamelt geld in om dit werk voort te zetten en uit te breiden.                </p>
                 <p className='text-muted-foreground leading relaxed'>
-                    Het doel van deze marktavond is geld ophalen voor deze mensen om hun werk mogelijk te maken. Wij ondersteunen dit omdat wij als <span className='font-bold'><span className='text-primary'>Bam</span><span className='text-secondary'>Burgers</span></span> vinden dat elk mens een fatsoenlijke leefomgeving moet hebben en God voor zichzelf mag ervaren!
+                    Het doel van deze marktavond is geld ophalen voor deze mensen om hun werk mogelijk te maken. Wij ondersteunen dit omdat wij als <BamBurgers bold={true} /> vinden dat elk mens een fatsoenlijke leefomgeving moet hebben en God voor zichzelf mag ervaren!
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    Wilt u nou ook helpen? Dat kan! De eerste manier is gebed. Verleidingen zijn groot, en God's genade en liefde zijn onmisbaar! Een andere manier is om natuurlijk naar onze kraam te komen en onze <span className='font-bold'><span className='text-primary'>Bam</span><span className='text-secondary'>Burgers</span></span> te proeven!
+                    Wilt u nou ook helpen? Dat kan! De eerste manier is gebed. Verleidingen zijn groot, en God's genade en liefde zijn onmisbaar! Een andere manier is om natuurlijk naar onze kraam te komen en onze <BamBurgers bold={true} /> te proeven!
                 </p>
                 <p className='text-accent text-shadow font-extrabold leading-relaxed'>
                     Bekijk de website van Stichting Jafet voor meer informatie.
