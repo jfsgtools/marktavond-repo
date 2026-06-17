@@ -123,10 +123,15 @@ export default function AboutPage() {
               <p className="text-muted-foreground leading-relaxed">
                 Drie weken lang testten we recepten. Onze families moesten de marteling ondergaan. Maar toen ze voor de achtste keer terugkwam voor hun zoveelste burger, wisten we: <span className="text-primary font-black">perfect</span>.
               </p>
-              <Link href="/menu" className="btn-primary self-start">
-                <Icon name="DocumentTextIcon" size={18} />
-                Bekijk Ons Menu
-              </Link>
+              <div className='flex flex-col sm:flex-row gap-3 flex-shrink-0'>
+                <Link href="/menu" className="btn-primary self-start mt-[0.10rem]">
+                  <Icon name="DocumentTextIcon" size={18} />
+                  Bekijk Ons Menu
+                </Link>
+                <Link href="/marktavond" className="btn-outline self-start">
+                  Over de Marktavond
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -211,10 +216,80 @@ export default function AboutPage() {
             <p className="text-muted-foreground mb-8">
               Kom langs bij onze kraam!
             </p>
-            <Link href="/menu" className="btn-primary text-base px-8 py-4">
-              <Icon name="DocumentTextIcon" size={20} />
-              Bekijk het Volledige Menu
-            </Link>
+            <div className='flex flex-col sm:flex-row gap-3 flex-shrink-0 justify-center'>
+              <Link href="/menu" className="btn-primary text-base px-8 py-4">
+                <Icon name="DocumentTextIcon" size={20} />
+                Bekijk het Volledige Menu
+              </Link>
+              <Link href="/marktavond" className="btn-outline text-base px-8 py-4">
+                <Icon name='InformationCircleIcon' size={28} />
+                Over de Marktavond
+              </Link>
+            </div>
+          </div>
+
+          {/* CONTACT */}
+          <div id='contact' className='max-w-4xl mx-auto border-border border-2 rounded-lg mt-28 mb-12 px-4 py-6 grid grid-flow-row gap-2'>
+            <h2 className='font-black text-primary text-section text-center'>Contact</h2>
+            
+            <div id='location' className='contact-item'>
+              <div id='icon'>
+                <Icon name='MapPinIcon' size={45} className='' />
+              </div>
+              <div id='text'>
+                <h4 className='font-semibold text-xl text-foreground'>
+                  Jacobus Fruytier <br className='visible sm:hidden'/>scholengemeenschap
+                </h4>
+                <p className='font-light text-lg text-muted-foreground'>
+                  Anklaarseweg 71<span className='hidden sm:visible sm:inline'>, </span><br className='visible sm:hidden'/>7316 MB  Apeldoorn
+                </p>
+              </div>
+            </div>
+            
+              <hr className='w-full border-border'/>
+
+            <div id='telephone' className='contact-item'>
+              <div id='icon'>
+                <Icon name='PhoneIcon' size={45} className='' />
+              </div>
+              <div id='text'>
+                <h4 className='font-semibold text-xl text-foreground'>
+                  Telefoonnummer bedrijfsleider
+                </h4>
+                <p className='font-light text-lg text-muted-foreground'>
+                  <Link href='tel:+31 6 81448288' className='underline'>+31 6 81448288</Link>
+                </p>
+                <h4 className='font-semibold text-xl text-foreground'>
+                  Telefoonnummer BamBurgers (alleen op marktavond)
+                </h4>
+                <p className='font-light text-lg text-muted-foreground'>
+                  <Link href='tel:+31 6 10161946' className='underline'>+31 6 10161946</Link>
+                </p>
+              </div>
+            </div>
+
+              <hr className='w-full border-border'/>
+            
+            <div id='mail' className='contact-item'>
+              <div id='icon'>
+                <Icon name='EnvelopeIcon' size={45} className='' />
+              </div>
+              <div id='text'>
+                <h4 className='font-semibold text-xl text-foreground'>
+                  Emailadres Bedrijfsleider
+                </h4>
+                <p className='font-light text-lg text-muted-foreground'>
+                  <Link href='mailto:190982@leerlingen.jfsg.nl' className='underline'>190982@leerlingen.jfsg.nl</Link>
+                </p>
+                <h4 className='font-semibold text-xl text-foreground'>
+                  Emailadres Bamburgers
+                </h4>
+                <p className='font-light text-lg text-muted-foreground'>
+                  <Link href='mailto:bamburgersbv@gmail.com' className='underline'>bamburgersbv@gmail.com</Link>
+                </p>
+              </div>
+            </div>
+
           </div>
         </section>
       </main>

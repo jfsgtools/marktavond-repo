@@ -3,7 +3,7 @@
 import React from 'react';
 
 interface LogoTextProps {
-     bold: boolean;
+     bold?: boolean;
 }
 
 function BamBurgers({

@@ -45,7 +45,7 @@ export default function DoelenPage() {
                         </span>
                     </div>
                     <h1 className=" text-display font-black text-foreground mb-6" style={{ maxWidth: '16ch' }}>
-                    Bamburgers<br />
+                    <BamBurgers bold/><br />
                     Voor <span className="text-primary">Mensen.</span>
                     </h1>
                     <p className=" text-muted-foreground text-lg max-w-xl leading-relaxed">

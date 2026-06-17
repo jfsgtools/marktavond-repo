@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import AppLogo from '../components/ui/AppLogo';
 import Icon from '../components/ui/AppIcon';
+import { Circle, Divide } from 'lucide-react';
+import BamBurgers from './ui/LogoText';
 
 interface HeaderProps {
   isVisible?: boolean;
@@ -43,10 +45,10 @@ export default function Header({ isVisible = false, forceShow = false }: HeaderP
             <AppLogo size={36} />
             <span
               id="header-brand"
-              className="font-black text-xl tracking-tight text-foreground hidden sm:block"
+              className="text-xl tracking-tight text-foreground hidden sm:block"
               style={{ letterSpacing: '-0.03em' }}
             >
-              BamBurgers
+              <BamBurgers bold />
             </span>
           </Link>
 
@@ -58,14 +60,17 @@ export default function Header({ isVisible = false, forceShow = false }: HeaderP
             <Link href="/about" className="nav-link-dutch text-muted-foreground hover:text-foreground transition-colors">
               Over Ons
             </Link>
+            <Link href='/marktavond' className='nav-link-dutch text-muted-foreground hover:text-foreground transition-colors'>
+              Over Marktavond
+            </Link>
             <Link href="/doelen" className="nav-link-dutch text-muted-foreground hover:text-foreground transition-colors">
               Onze Doelen
             </Link>
             <Link href="/review" className="nav-link-dutch text-muted-foreground hover:text-foreground transition-colors">
               Gastenboek
             </Link>
-            <Link href="/menu" className="btn-primary text-sm">
-              Bekijk Menu
+            <Link href="/about#contact" className="nav-link-dutch text-muted-foreground hover:text-foreground transition-colors">
+              Contact
             </Link>
           </nav>
 
@@ -83,11 +88,12 @@ export default function Header({ isVisible = false, forceShow = false }: HeaderP
 
       {/* Mobile nav overlay */}
       <div className={`mobile-nav ${mobileOpen ? 'open' : ''}`} aria-hidden={!mobileOpen}>
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center gap-3 mb-2">
           <AppLogo size={40} />
-          <span className="font-black text-2xl tracking-tight" style={{ letterSpacing: '-0.03em' }}>BamBurgers</span>
+          <span className="text-2xl tracking-tight" style={{ letterSpacing: '-0.03em' }}><BamBurgers bold /></span>
         </div>
-        <nav className="flex flex-col items-center gap-6" aria-label="Mobiele navigatie">
+        <hr className='border-muted-foreground border-solid max-w-xs w-full' />
+        <nav className="flex flex-col items-center gap-6 my-2" aria-label="Mobiele navigatie">
           <Link
             href="/"
             className="nav-link-dutch text-2xl text-foreground hover:text-primary transition-colors"
@@ -110,6 +116,13 @@ export default function Header({ isVisible = false, forceShow = false }: HeaderP
             Over Ons
           </Link>
           <Link
+            href="/marktavond"
+            className="nav-link-dutch text-2xl text-foreground hover:text-primary transition-colors"
+            onClick={() => setMobileOpen(false)}
+          >
+            Over Marktavond
+          </Link>
+          <Link
             href="/doelen"
             className="nav-link-dutch text-2xl text-foreground hover:text-primary transition-colors"
             onClick={() => setMobileOpen(false)}
@@ -123,14 +136,57 @@ export default function Header({ isVisible = false, forceShow = false }: HeaderP
           >
             Gastenboek
           </Link>
+          {/* <hr className='border-muted-foreground border-solid max-w-6xl w-full'/> */}
           <Link
-            href="/menu"
-            className="btn-primary mt-4"
+            href="/about#contact"
+            className="nav-link-dutch text-2xl text-foreground hover:text-primary transition-colors"
             onClick={() => setMobileOpen(false)}
           >
-            Bekijk Menu
+            Contact
           </Link>
         </nav>
+        <hr className='border-muted-foreground border-solid max-w-xs w-full' />
+        <section id='social-media' className='px-5 flex flex-row gap-4 mt-8 mb-4'>
+          <div id='mailIcon' className='relative w-12 h-12'>
+            <div className='absolute inset-0 z-0 flex items-center justify-center'>
+              <Circle className='fill-primary-foreground text-primary-foreground drop-shadow-md' size={34} />
+            </div>
+            <div className='absolute inset-0 z-10 flex items-center justify-center'>
+              <Icon
+                name='EnvelopeIcon'
+                size={24}
+                onClick={() => window.open('mailto:bamburgersbv@gmail.com')}
+                className='text-accent cursor-pointer'
+              />
+            </div>
+          </div>
+          <div id='locationIcon' className='relative w-12 h-12'>
+            <div className='absolute inset-0 z-0 flex items-center justify-center'>
+              <Circle className='fill-primary-foreground text-primary-foreground drop-shadow-md' size={34} />
+            </div>
+            <div className='absolute inset-0 z-10 flex items-center justify-center'>
+              <Icon
+                name='MapPinIcon'
+                size={24}
+                onClick={() => window.open('https://maps.app.goo.gl/GZLLDgkUo5xttLvXA')}
+                className='text-accent cursor-pointer'
+              />
+            </div>
+          </div>
+          <div id='callIcon' className='relative w-12 h-12'>
+            <div className='absolute inset-0 z-0 flex items-center justify-center'>
+              <Circle className='fill-primary-foreground text-primary-foreground drop-shadow-md' size={34} />
+            </div>
+            <div className='absolute inset-0 z-10 flex items-center justify-center'>
+              <Icon
+                name='PhoneIcon'
+                size={24}
+                onClick={() => window.open('tel:+31 6 10161946')}
+                className='text-accent cursor-pointer'
+              />
+            </div>
+          </div>
+        </section>
         <button
           className="absolute top-6 right-6 p-2"
           onClick={() => setMobileOpen(false)}
