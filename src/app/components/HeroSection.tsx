@@ -54,7 +54,7 @@ export default function HeroSection() {
         {/* Sub + CTA */}
         <div className="reveal-up opacity-100 flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-16">
           <p className="text-muted-foreground text-lg max-w-sm leading-relaxed">
-            Zelfgemaakte burgers, eerlijke prijzen — <span className="text-accent font-black">19 juni</span> vers op de marktavond.
+            Zelfgemaakte burgers, eerlijke prijzen — <span className="text-accent font-black">19 juni 2026</span> van <span className='font-black'>16:30 tot 20:00</span> op de marktavond.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
             <Link href="/menu" className="btn-primary">

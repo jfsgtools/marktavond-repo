@@ -7,6 +7,7 @@ import AppImage from '../../components/ui/AppImage';
 import Icon from '../../components/ui/AppIcon';
 import Link from 'next/link';
 import BamBurgers from '../../components/ui/LogoText';
+import { Bold } from 'lucide-react';
 
 
 export default function MarktAvondInfoPage() {
@@ -79,6 +80,10 @@ export default function MarktAvondInfoPage() {
               </p>
               <p className='text-muted-foreground leading-relaxed'>
                 Wil jij nou ook ervaren hoe zo'n marktavond is? Kom dan gezellig langs!
+              </p>
+              <p className='text-muted-foreground leading-relaxed'>
+                <span className='font-semibold'>Openingstijden:</span><br />
+                19 Juni 2026; 16:30 - 19:30
               </p>
               <div className='flex flex-col sm:flex-row gap-3 flex-shrink-0'>
                 <Link href="https://maps.app.goo.gl/GZLLDgkUo5xttLvXA" className="btn-primary self-start mt-[0.10rem]">
