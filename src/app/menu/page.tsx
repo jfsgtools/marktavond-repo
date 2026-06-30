@@ -100,7 +100,7 @@ export default function MenuPage() {
         </section>
 
         {/* Info strip */}
-        <section className="py-12 px-6 bg-foreground">
+        <section className="py-12 px-6 bg-foreground mb-14 bottom-0 w-full">
           <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <Icon name="ClockIcon" size={24} className="text-accent" />

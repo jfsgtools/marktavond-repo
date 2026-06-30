@@ -68,7 +68,7 @@ export default function MarktAvondInfoPage() {
               </div>
             </div>
 
-            <div className="reveal-up opacity-100 flex flex-col gap-6 lg:pl-6">
+            <div className="reveal-up opacity-100 flex flex-col gap-6 lg:pl-6 mb-5">
               <p className="text-muted-foreground leading-relaxed">
                 Op <span className='text-accent font-semibold'>19 Juni 2026</span> zullen wij als <BamBurgers bold /> aanwezig zijn op de Marktavond van 2026.
                 Maar, wat is de marktavond, en waar is hij voor?

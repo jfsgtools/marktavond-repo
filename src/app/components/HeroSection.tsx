@@ -30,7 +30,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="min-h-screen pt-28 pb-20 px-6 flex flex-col justify-center relative overflow-hidden">
+    <section ref={sectionRef} className="min-h-screen pt-28 pb-18 px-6 flex flex-col justify-center relative overflow-hidden">
       {/* Background atmosphere */}
       <div className="absolute top-20 right-0 w-[600px] h-[600px] blob-primary rounded-full" aria-hidden />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] blob-accent rounded-full" aria-hidden />

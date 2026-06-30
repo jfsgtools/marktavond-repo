@@ -4,7 +4,7 @@ import AppLogo from '../components/ui/AppLogo';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border py-5 sm:py-8 px-6">
+    <footer className="border-t border-border py-5 sm:py-8 px-6 -mt-14">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 lg:gap-4">
         <div className="flex items-center gap-1 lg:gap-2">
           <AppLogo size={28} />

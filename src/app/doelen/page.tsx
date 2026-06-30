@@ -34,7 +34,7 @@ export default function DoelenPage() {
     
     return ( <>
         <Header forceShow />
-        <main className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background mb-6">
             {/* Hero */}
             <section className="pt-32 pb-16 px-6 relative overflow-hidden">
                 <div className="max-w-6xl mx-auto relative z-10">
