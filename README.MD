@@ -4,4 +4,4 @@ In deze repository staan alle assets voor het scherm op de marktavond 2026 van d
 De bestanden zijn powerpoint one-click-launch bestanden. Powerpoint is nodig om deze te laten zien.
 De bestandafmetingen zijn verticaal 4k formaat.
 
-Downloaden kan hier: [Downloaden](https://github.com/0xciphershard/marktavond-repo/releases/latest/download/display-files.zip).
+Downloaden kan hier: [Downloaden](https://github.com/jfsgtools/marktavond-repo/releases/latest/download/display-files.zip).
