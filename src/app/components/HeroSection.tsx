@@ -30,7 +30,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="min-h-screen pt-28 pb-18 px-6 flex flex-col justify-center relative overflow-hidden">
+    <section ref={sectionRef} className="min-h-screen pt-28 pb-18 mb-32 px-6 flex flex-col justify-center relative overflow-hidden">
       {/* Background atmosphere */}
       <div className="absolute top-20 right-0 w-[600px] h-[600px] blob-primary rounded-full" aria-hidden />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] blob-accent rounded-full" aria-hidden />
@@ -99,7 +99,7 @@ export default function HeroSection() {
           <div className="burger-card bg-primary p-6 flex flex-col justify-between min-h-[150px]">
             <div>
               <p className="text-white/70 text-sm font-semibold mt-1">Klanten geven ons:</p>
-              <div className="stat-number" style={{ color: 'white'}} ><Review max={5} rating={5} color='text-white' width='45px' height='auto' className='py-3 origin-center' showRemaining /></div>
+              <div className="stat-number" style={{ color: 'white'}} ><Review max={5} rating={5} color='text-accent' width='45px' height='auto' className='py-3 origin-center' showRemaining /></div>
             </div>
           </div>
 
